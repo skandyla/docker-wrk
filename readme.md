@@ -11,6 +11,7 @@ Repository name in Docker Hub: **[skandyla/wrk](https://hub.docker.com/r/skandyl
 This repository contains Dockerized [wrk](https://github.com/wg/wrk), published to the public [Docker Hub Registry](https://registry.hub.docker.com/) via **automated build** mechanism.
 
 
+
 ## Info
 
 This docker image contains the following software stack:
@@ -23,11 +24,13 @@ However, if you would like to use absolutely minimum wrk image, take a look to
 [williamyeh/wrk](https://hub.docker.com/r/williamyeh/wrk/) image, based on Alpine 3 Linux.   
 
 
+
 ## Installation
 
 ```
 $ docker pull skandyla/wrk
 ```
+
 
 ## Usage
 
@@ -53,6 +56,7 @@ Add custom records to /etc/hosts:
 $ docker run --rm -v /etc/hosts:/etc/hosts \
   skandyla/wrk -t5 -c10 -d30  https://www.example.com
 ```
+
 
 ## Wrk mini-howto
 
@@ -82,7 +86,9 @@ $ docker run --rm -v /etc/hosts:/etc/hosts \
     22464657 requests in 30.00s, 17.76GB read
   Requests/sec: 748868.53
   Transfer/sec:    606.33MB
-```
+```  
+
+
 
 LuaJIT script example:  
 *script.lua:*  
@@ -93,10 +99,12 @@ LuaJIT script example:
 wrk.method = "POST"
 wrk.body   = '{"value":"ourdata","type":"example"}'
 wrk.headers["X-EXAMPLE-HEADER"] = "OurDataHeader"
-```
+```  
+
 Launch:  
 `wrk -t10 -c50 -d30s -s script.lua https://api.example.com`  
 
 
+
 ### Useful info
-[Load testing with `wrk` when every reqeust has unique http hmac authorization header](http://www.puremistake.com/3/)  
+[Load testing with wrk when every reqeust has unique http hmac authorization header](http://www.puremistake.com/3/)  
