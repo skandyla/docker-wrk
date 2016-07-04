@@ -18,42 +18,38 @@ This docker image contains the following software stack:
 
 - Official Ubuntu latest image
 
-- wrk
+- Wrk
 
 
 ## Installation
 
-   ```
-   $ docker pull skandyla/wrk
-   ```
+```
+$ docker pull skandyla/wrk
+```
 
 
 ## Usage
 
 
 #### Show usage
-
 ```
 $ docker run --rm skandyla/wrk
 ```
 
 #### Login inside the conatiner
-
 ```
 $ docker run --rm skandyla/wrk bash
 ```
 
 #### Script example
-
 ```
-$ docker run --rm  -v `pwd`:/data skandyla/wrk -s script.lua  https://www.google.com/
+$ docker run --rm  -v $(pwd):/opt/wrk skandyla/wrk -s script.lua  https://www.google.com
 ```
 
 #### Custom hosts entries example
-Add custom records to /etc/hosts  
-
+Add custom records to /etc/hosts:    
 ```
-$ docker run --rm -v '/etc/hosts:/etc/hosts' skandyla/wrk -c10 -d30  https://www.example.com/
+$ docker run --rm -v /etc/hosts:/etc/hosts skandyla/wrk -c10 -d30  https://www.example.com
 ```
 
 

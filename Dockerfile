@@ -1,4 +1,5 @@
-# 
+# Docker image for wrk
+#
 FROM       ubuntu:latest
 MAINTAINER Sergey Kandyla <skandyla@gmail.com>
 
@@ -20,6 +21,8 @@ RUN apt-get clean \
     && apt-get -y autoremove \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /opt/wrk/obj/*
 
+
+VOLUME [ "/opt/wrk" ]
 WORKDIR /opt/wrk
 COPY entry.sh /
 ENTRYPOINT ["/entry.sh"]                                                                

@@ -2,11 +2,11 @@
 case "$1" in
     bash)
          echo "Running shell"
-         /bin/bash
+         /bin/bash 
          ;;
     *)
-         echo "Running wrk"
-         /opt/wrk/wrk
+         echo "Wrk:"
+         /opt/wrk/wrk $@
          ;;
 esac
 exit $?
