@@ -13,17 +13,18 @@ RUN WRK_VERSION=$(curl -L https://github.com/wg/wrk/raw/master/CHANGES 2>/dev/nu
     && cd /opt/wrk \
     && curl -L https://github.com/wg/wrk/archive/$WRK_VERSION.tar.gz | \
        tar zx --strip 1 \
-    && make
+    && make \
+    && cp wrk /usr/local/bin/
     #&& make clean
 
 RUN apt-get clean \
     && apt-get -y remove build-essential curl \
     && apt-get -y autoremove \
-    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /opt/wrk/obj/*
+    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /opt/wrk/
 
 
-VOLUME [ "/opt/wrk" ]
-WORKDIR /opt/wrk
+#VOLUME [ "/data" ]
+WORKDIR /data
 COPY entry.sh /
 ENTRYPOINT ["/entry.sh"]                                                                
 

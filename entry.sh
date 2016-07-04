@@ -6,7 +6,7 @@ case "$1" in
          ;;
     *)
          echo "Wrk:"
-         /opt/wrk/wrk $@
+         /usr/local/bin/wrk $@
          ;;
 esac
 exit $?

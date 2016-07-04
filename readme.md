@@ -11,13 +11,11 @@ Repository name in Docker Hub: **[skandyla/wrk](https://hub.docker.com/r/skandyl
 This repository contains Dockerized [wrk](https://github.com/wg/wrk), published to the public [Docker Hub](https://registry.hub.docker.com/) via **automated build** mechanism.
 
 
-
 ## Configuration
 
 This docker image contains the following software stack:
 
-- Official Ubuntu latest image
-
+- Ubuntu official image
 - Wrk
 
 
@@ -27,9 +25,7 @@ This docker image contains the following software stack:
 $ docker pull skandyla/wrk
 ```
 
-
 ## Usage
-
 
 #### Show usage
 ```
@@ -38,12 +34,12 @@ $ docker run --rm skandyla/wrk
 
 #### Login inside the conatiner
 ```
-$ docker run --rm skandyla/wrk bash
+$ docker run -it skandyla/wrk bash
 ```
 
 #### Script example
 ```
-$ docker run --rm  -v $(pwd):/opt/wrk skandyla/wrk -s script.lua  https://www.google.com
+$ docker run --rm -v $(pwd):/data skandyla/wrk -s /data/script.lua  https://www.example.com
 ```
 
 #### Custom hosts entries example
