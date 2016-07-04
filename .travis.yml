@@ -1,0 +1,14 @@
+sudo: true
+services:
+    - docker
+
+before_install:
+    - docker info
+    - docker version
+    - docker build -t wrk .
+
+script:
+    - docker run -i wrk -c2 -d1 https://www.google.com/ > result  
+
+    - echo "==> Validating the test results..."
+    - sh -c "[ -s result ]"
