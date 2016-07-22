@@ -19,8 +19,7 @@ This docker image contains the following software stack:
 - Ubuntu official image
 - Wrk
 
-There is an ability to log in inside the container and use all Ubuntu features.  
-However, if you would like to use absolutely minimum wrk image, take a look to   
+If you would like to use absolutely minimum wrk image, take a look to   
 [williamyeh/wrk](https://hub.docker.com/r/williamyeh/wrk/) image, based on Alpine 3 Linux.   
 
 
@@ -37,11 +36,6 @@ $ docker pull skandyla/wrk
 #### Show usage
 ```
 $ docker run --rm skandyla/wrk
-```
-
-#### Login inside the conatiner
-```
-$ docker run -it skandyla/wrk bash
 ```
 
 #### Script example
