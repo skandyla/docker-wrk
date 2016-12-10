@@ -11,20 +11,16 @@ Repository name in Docker Hub: **[skandyla/wrk](https://hub.docker.com/r/skandyl
 This repository contains Dockerized [wrk](https://github.com/wg/wrk), published to the public [Docker Hub Registry](https://hub.docker.com/) via **automated build** mechanism.
 
 
-
 ## Images, tags and respective Dockerfile links
 
-- `skandyla/wrk:latest`, `skandyla/wrk:debian8` ([debian8/Dockerfile](https://github.com/skandyla/docker-wrk/blob/master/debian8/Dockerfile))
+- `skandyla/wrk:latest`,`skandyla/wrk:alpine` ([alpine/Dockerfile](https://github.com/skandyla/docker-wrk/blob/master/alpine/Dockerfile))
+- `skandyla/wrk:debian8` ([debian8/Dockerfile](https://github.com/skandyla/docker-wrk/blob/master/debian8/Dockerfile))
 - `skandyla/wrk:ubuntu16.04` ([ubuntu16.04/Dockerfile](https://github.com/skandyla/docker-wrk/blob/master/ubuntu16.04/Dockerfile))
 
 This docker image contains the following software stack:
 
-- Debian8 or Ubuntu16.04 official images
+- Alpine3\Debian8\Ubuntu16.04 official images (Default is Alpine)
 - Wrk
-
-If you would like to use absolutely minimum wrk image, take a look to   
-[williamyeh/wrk](https://hub.docker.com/r/williamyeh/wrk/) image, based on Alpine 3 Linux.   
-
 
 
 ## Installation
