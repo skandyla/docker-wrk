@@ -10,4 +10,5 @@ RUN apk add --update alpine-sdk perl      && \
     apk del --purge alpine-sdk perl       && \
     apk add libgcc
 
-ENTRYPOINT ["/usr/local/bin/wrk"]
+WORKDIR /data
+ENTRYPOINT ["wrk"]
