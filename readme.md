@@ -14,12 +14,11 @@ Published via **automated build** mechanism
 
 ## Images, tags and respective Dockerfile links
 
-[![](https://images.microbadger.com/badges/version/skandyla/wrk.svg)](https://microbadger.com/images/skandyla/wrk "Get your own version badge on microbadger.com")  [![](https://images.microbadger.com/badges/image/skandyla/wrk.svg)](https://microbadger.com/images/skandyla/wrk "Get your own image badge on microbadger.com")  
+[![](https://images.microbadger.com/badges/version/skandyla/wrk.svg)](https://microbadger.com/images/skandyla/wrk "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/skandyla/wrk.svg)](https://microbadger.com/images/skandyla/wrk "Get your own image badge on microbadger.com")  
 - `skandyla/wrk` ([alpine/Dockerfile](https://github.com/skandyla/docker-wrk/blob/master/alpine/Dockerfile)) - default image, based on Alpine 3.4
 
 
-[![](https://images.microbadger.com/badges/version/skandyla/wrk:debian8.svg)](https://microbadger.com/images/skandyla/wrk:debian8 "Get your own version badge on microbadger.com")
-[![](https://images.microbadger.com/badges/image/skandyla/wrk:debian8.svg)](https://microbadger.com/images/skandyla/wrk:debian8 "Get your own image badge on microbadger.com")
+[![](https://images.microbadger.com/badges/version/skandyla/wrk:debian8.svg)](https://microbadger.com/images/skandyla/wrk:debian8 "Get your own version badge on microbadger.com") [![](https://images.microbadger.com/badges/image/skandyla/wrk:debian8.svg)](https://microbadger.com/images/skandyla/wrk:debian8 "Get your own image badge on microbadger.com")
 - `skandyla/wrk:debian8` ([debian8/Dockerfile](https://github.com/skandyla/docker-wrk/blob/master/debian8/Dockerfile)) - image, based on debian:jessie
 
 
