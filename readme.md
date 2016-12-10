@@ -12,11 +12,14 @@ This repository contains Dockerized [wrk](https://github.com/wg/wrk), published 
 
 
 
-## Info
+## Images, tags and respective Dockerfile links
+
+- `skandyla/wrk:latest`, `skandyla/wrk:debian8` ([debian8/Dockerfile](https://github.com/skandyla/docker-wrk/blob/master/debian8/Dockerfile))
+- `skandyla/wrk:ubuntu16.04` ([ubuntu16.04/Dockerfile](https://github.com/skandyla/docker-wrk/blob/master/ubuntu16.04/Dockerfile))
 
 This docker image contains the following software stack:
 
-- Ubuntu official image
+- Debian8 or Ubuntu16.04 official images
 - Wrk
 
 If you would like to use absolutely minimum wrk image, take a look to   
