@@ -41,7 +41,7 @@ $ docker run --rm skandyla/wrk
 
 #### To login inside the container (optional)
 ```
-$ docker run -it --rm  --entrypoint=/bin/bash skandyla/wrk
+$ docker run -it --rm  --entrypoint=/bin/sh skandyla/wrk
 ```
 
 #### Script example
