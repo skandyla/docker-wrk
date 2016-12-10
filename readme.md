@@ -8,7 +8,7 @@ Docker-Wrk
 
 Repository name in Docker Hub: **[skandyla/wrk](https://hub.docker.com/r/skandyla/wrk/)**
 
-This repository contains Dockerized [wrk](https://github.com/wg/wrk), published to the public [Docker Hub Registry](https://registry.hub.docker.com/) via **automated build** mechanism.
+This repository contains Dockerized [wrk](https://github.com/wg/wrk), published to the public [Docker Hub Registry](https://hub.docker.com/) via **automated build** mechanism.
 
 
 
@@ -36,6 +36,12 @@ $ docker pull skandyla/wrk
 #### Show usage
 ```
 $ docker run --rm skandyla/wrk
+```
+
+
+#### To login inside the container (optional)
+```
+$ docker run -it --rm  --entrypoint=/bin/bash skandyla/wrk
 ```
 
 #### Script example

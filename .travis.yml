@@ -5,9 +5,12 @@ services:
 before_install:
   - docker info
   - docker version
-  - docker build -t wrk .
+  - docker build -t debian8-wrk debian8
+  - docker build -t ubuntu16.04-wrk ubuntu16.04
 
 script:
-  - docker run -i wrk -c2 -d1 https://www.google.com | tee result  
+  - docker run -i debian8-wrk -c2 -d1 https://www.google.com | tee result-debian8  
+  - docker run -i ubuntu16.04-wrk -c2 -d1 https://www.google.com | tee result-ubuntu16.04  
   - echo "Validating the test results..."
-  - bash -c "[ -s result ]"
+  - bash -c "[ -s result-debian8 ]"
+  - bash -c "[ -s result-ubuntu16.04 ]"
