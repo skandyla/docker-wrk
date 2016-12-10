@@ -13,14 +13,18 @@ This repository contains Dockerized [wrk](https://github.com/wg/wrk), published 
 
 ## Images, tags and respective Dockerfile links
 
-- `skandyla/wrk:latest`,`skandyla/wrk:alpine` ([alpine/Dockerfile](https://github.com/skandyla/docker-wrk/blob/master/alpine/Dockerfile))
-- `skandyla/wrk:debian8` ([debian8/Dockerfile](https://github.com/skandyla/docker-wrk/blob/master/debian8/Dockerfile))
-- `skandyla/wrk:ubuntu16.04` ([ubuntu16.04/Dockerfile](https://github.com/skandyla/docker-wrk/blob/master/ubuntu16.04/Dockerfile))
-
 This docker image contains the following software stack:
 
-- Alpine3\Debian8\Ubuntu16.04 official images (Default is Alpine)
+- Alpine3 (Debian8 optional) official images
 - Wrk
+
+[![](https://images.microbadger.com/badges/version/skandyla/wrk.svg)](https://microbadger.com/images/skandyla/wrk "Get your own version badge on microbadger.com")  [![](https://images.microbadger.com/badges/image/skandyla/wrk.svg)](https://microbadger.com/images/skandyla/wrk "Get your own image badge on microbadger.com")  
+- `skandyla/wrk` ([alpine/Dockerfile](https://github.com/skandyla/docker-wrk/blob/master/alpine/Dockerfile)) - default image, based on Alpine 3.4
+
+[![](https://images.microbadger.com/badges/version/skandyla/wrk:debian8.svg)](https://microbadger.com/images/skandyla/wrk:debian8 "Get your own version badge on microbadger.com")
+[![](https://images.microbadger.com/badges/image/skandyla/wrk:debian8.svg)](https://microbadger.com/images/skandyla/wrk:debian8 "Get your own image badge on microbadger.com")
+- `skandyla/wrk:debian8` ([debian8/Dockerfile](https://github.com/skandyla/docker-wrk/blob/master/debian8/Dockerfile)) - image, based on debian:jessie
+
 
 
 ## Installation
