@@ -6,20 +6,17 @@ Docker-Wrk
 
 ## Summary
 
-Repository name in Docker Hub: **[skandyla/wrk](https://hub.docker.com/r/skandyla/wrk/)**
+A minimal docker image with **[Wrk](https://github.com/wg/wrk)** http benchmarking tool based on **[Alpine](https://hub.docker.com/_/alpine/)** Linux (and optionally on [Debian8](https://hub.docker.com/_/debian/))  
+Total image size is less then **10mb**  
 
-This repository contains Dockerized [wrk](https://github.com/wg/wrk), published to the public [Docker Hub Registry](https://hub.docker.com/) via **automated build** mechanism.
-
+Repository name in Docker Hub: **[skandyla/wrk](https://hub.docker.com/r/skandyla/wrk/)**  
+Published via **automated build** mechanism  
 
 ## Images, tags and respective Dockerfile links
 
-This docker image contains the following software stack:
-
-- Alpine3 (Debian8 optional) official images
-- Wrk
-
 [![](https://images.microbadger.com/badges/version/skandyla/wrk.svg)](https://microbadger.com/images/skandyla/wrk "Get your own version badge on microbadger.com")  [![](https://images.microbadger.com/badges/image/skandyla/wrk.svg)](https://microbadger.com/images/skandyla/wrk "Get your own image badge on microbadger.com")  
 - `skandyla/wrk` ([alpine/Dockerfile](https://github.com/skandyla/docker-wrk/blob/master/alpine/Dockerfile)) - default image, based on Alpine 3.4
+
 
 [![](https://images.microbadger.com/badges/version/skandyla/wrk:debian8.svg)](https://microbadger.com/images/skandyla/wrk:debian8 "Get your own version badge on microbadger.com")
 [![](https://images.microbadger.com/badges/image/skandyla/wrk:debian8.svg)](https://microbadger.com/images/skandyla/wrk:debian8 "Get your own image badge on microbadger.com")
