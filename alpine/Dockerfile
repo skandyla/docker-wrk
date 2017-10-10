@@ -1,8 +1,8 @@
-FROM alpine:3.4
+FROM alpine:latest
 MAINTAINER Sergey Kandyla <skandyla@gmail.com>
 RUN apk add --update alpine-sdk perl      && \
     cd /tmp                               && \
-    git clone https://github.com/wg/wrk   && \
+    git clone -b 4.0.2 https://github.com/wg/wrk   && \
     cd wrk                                && \
     make                                  && \
     mv ./wrk /usr/local/bin               && \
