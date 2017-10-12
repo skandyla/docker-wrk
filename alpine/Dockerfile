@@ -8,6 +8,6 @@ RUN cd /tmp/wrk                           && \
 FROM alpine:latest
 MAINTAINER Sergey Kandyla <skandyla@gmail.com>
 COPY --from=build /tmp/wrk/wrk /usr/local/bin/
-RUN apk add --update libgcc
+RUN apk add --no-cache libgcc
 WORKDIR /data
 ENTRYPOINT ["wrk"]
